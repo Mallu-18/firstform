@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<body>
+    <h1><i><u>Student Information Form:</u></i></h1><br>
+    <form>
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br><br>
+
+            <label for="email">Email:   </label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="date">Date of Birth:</label>
+            <input type="date" id="date" name="date"><br><br>
+
+            <label for="comment">Short Bio:</label><br>
+            <textarea id="comment" rows="5" cols="40" name="bio" placeholder="Tell us about yourself....."></textarea>
+        </fieldset><br>
+
+
+        <fieldset>
+            <legend><b>Gender</b></legend>
+            <label>
+                 <input type="radio" name="gender" value="M">Male
+            </label><br>
+
+            <label>
+                 <input type="radio" name="gender" value="F">Female
+            </label><br>
+
+            <label>
+                 <input type="radio" name="gender" value="O">Other
+            </label>
+        </fieldset><br>
+
+
+        <fieldset>
+            <legend><b>Areas of Interest</b></legend>
+            <label>
+                <input type="checkbox" name="Web" value="Web Development">Web Development
+            </label><br>
+            <label>
+                <input type="checkbox" name="AI" value="Ai">Artificial Intelligence
+            </label><br>
+            <label>
+                <input type="checkbox" name="DS" value="dsa">Data Science
+            </label><br>
+        </fieldset><br>
+
+
+        <fieldset>
+            <legend><b>Programming Skill Level</b></legend>
+            <label for="range">Rate your skill(0 to 10)</label><br>
+            <input type="range" id="range" name="skill" min="0" max="10" >
+        </fieldset><br>
+
+
+        <fieldset>
+            <legend><b>Upload Your Photo</b></legend>
+            <label for="file"></label>
+            <input type="file" id="file" title="Upload file" name="file" >
+        </fieldset>
+        <br><br>
+
+
+        <button type="submit"><b>Submit</b></button>
+        <button type="reset">Reset</button>
+
+
+
+
+    </form>
+</body>
+</html>
